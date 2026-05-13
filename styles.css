@@ -112,7 +112,7 @@ button {
   right: 0;
   top: 80px;
   bottom: 0;
-  background: url('assets/hero-photo.webp') right center / auto 115% no-repeat;
+  background: url('assets/hero-photo.webp') 40% center / auto 115% no-repeat;
 }
 .hero-fade {
   position: absolute;
@@ -121,10 +121,10 @@ button {
   top: 80px;
   bottom: 0;
   background: linear-gradient(90deg,
-    rgba(26, 6, 55, 0.72) 0%,
-    rgba(26, 6, 55, 0.55) 35%,
-    rgba(0, 0, 0, 0.28) 70%,
-    rgba(0, 0, 0, 0.22) 100%);
+    rgba(26, 6, 55, 0.55) 0%,
+    rgba(26, 6, 55, 0.42) 35%,
+    rgba(0, 0, 0, 0.22) 70%,
+    rgba(0, 0, 0, 0.18) 100%);
   pointer-events: none;
 }
 
