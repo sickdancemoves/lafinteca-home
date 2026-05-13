@@ -106,38 +106,26 @@ button {
   background: var(--lf-purple-950);
   color: #fff;
 }
-.hero-bg-blobs {
+.hero-photo {
   position: absolute;
-  inset: 0;
-  background: url('assets/bg-abstract-black-blobs.jpg') center / cover no-repeat;
-  opacity: 0.9;
-}
-.hero-bg-stripes {
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(180deg, rgba(26, 6, 55, 0) 0%, rgba(26, 6, 55, 0.4) 100%),
-    linear-gradient(90deg,
-      rgba(195, 171, 255, 0.18) 0%,
-      rgba(73, 43, 139, 0.6) 30%,
-      rgba(26, 6, 55, 0.85) 60%,
-      rgba(0, 0, 0, 0.95) 100%);
-}
-.hero-grain {
-  position: absolute;
-  inset: 0;
-  background: url('assets/bg-texture-grain.png') center / cover repeat;
-  opacity: 0.25;
-  mix-blend-mode: overlay;
-  pointer-events: none;
-}
-.hero-portrait {
-  position: absolute;
+  left: 0;
   right: 0;
   top: 80px;
   bottom: 0;
-  width: 860px;
-  background: url('assets/hero-photo.webp') center / cover no-repeat;
+  background: url('assets/hero-photo.webp') right center / cover no-repeat;
+}
+.hero-fade {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 80px;
+  bottom: 0;
+  background: linear-gradient(90deg,
+    var(--lf-purple-950) 0%,
+    var(--lf-purple-950) 22%,
+    rgba(26, 6, 55, 0.85) 38%,
+    rgba(26, 6, 55, 0.0) 62%);
+  pointer-events: none;
 }
 
 .hero-content {
