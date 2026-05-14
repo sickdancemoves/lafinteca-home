@@ -112,7 +112,7 @@ button {
   right: 0;
   top: 80px;
   bottom: 0;
-  background: url('assets/hero-photo.webp') 40% center / auto 115% no-repeat;
+  background: url('assets/hero-photo.webp') 25% center / auto 115% no-repeat;
 }
 .hero-fade {
   position: absolute;
