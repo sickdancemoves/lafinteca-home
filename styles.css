@@ -21,7 +21,8 @@ button {
 }
 
 .page {
-  width: 1366px;
+  width: 100%;
+  max-width: 1366px;
   margin: 0 auto;
   background: var(--lf-near-white);
   overflow: hidden;
@@ -523,4 +524,74 @@ button {
   font-size: 13px;
   color: rgba(255, 255, 255, 0.32);
   white-space: nowrap;
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .header { padding: 0 32px; }
+  .nav { gap: 24px; margin-left: 32px; }
+
+  .hero { height: auto; min-height: 640px; }
+  .hero-content { padding: 20px 32px 60px; max-width: 560px; }
+  .hero h1 { font-size: 64px; }
+
+  .features { padding: 80px 32px; }
+  .features h2 { font-size: 44px; }
+  .feature-grid { grid-template-columns: 1fr 1fr; }
+
+  .cta { padding: 100px 32px; }
+  .cta-inner { grid-template-columns: 1fr; gap: 56px; }
+  .cta h2 { font-size: 56px; }
+
+  .footer { padding: 64px 32px 32px; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px 32px; }
+  .footer-bottom { flex-wrap: wrap; }
+}
+
+@media (max-width: 640px) {
+  .header { padding: 0 20px; height: 64px; }
+  .header .logo { height: 22px; }
+  .nav { display: none; }
+  .header-actions .btn-ghost-light { display: none; }
+  .btn { height: 44px; padding: 0 18px; font-size: 14px; }
+
+  .hero { min-height: 560px; }
+  .hero-photo {
+    top: 64px;
+    background-size: auto 100%;
+    background-position: 30% center;
+  }
+  .hero-fade {
+    top: 64px;
+    background: linear-gradient(180deg,
+      rgba(26, 6, 55, 0.6) 0%,
+      rgba(26, 6, 55, 0.5) 50%,
+      rgba(0, 0, 0, 0.4) 100%);
+  }
+  .hero-content {
+    padding: 24px 20px 48px;
+    margin-top: 0;
+    max-width: none;
+  }
+  .hero-eyebrow { margin-bottom: 20px; }
+  .hero h1 { font-size: 44px; margin-bottom: 20px; }
+  .hero p.lead { font-size: 16px; margin-bottom: 28px; }
+  .hero-cta { flex-direction: column; gap: 10px; align-items: stretch; }
+
+  .features { padding: 64px 20px; }
+  .features-head { margin-bottom: 48px; }
+  .features h2 { font-size: 32px; }
+  .feature-grid { grid-template-columns: 1fr; gap: 16px; margin-bottom: 40px; }
+  .feature-card { padding: 28px 24px; }
+
+  .cta { padding: 80px 20px; }
+  .cta h2 { font-size: 40px; }
+  .cta p { font-size: 16px; }
+  .cta-stats { grid-template-columns: 1fr; padding: 24px; gap: 24px; }
+  .cta-stat .stat-num { font-size: 36px; }
+
+  .footer { padding: 48px 20px 24px; }
+  .footer-grid { grid-template-columns: 1fr; gap: 32px; padding-bottom: 40px; }
+  .footer-bottom { flex-direction: column; align-items: flex-start; gap: 16px; }
+  .footer-bottom .copy { white-space: normal; }
 }
