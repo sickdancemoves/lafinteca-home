@@ -19,11 +19,22 @@
     </a>
     <nav class="nav">
       <a href="Conta PJ.html">Conta PJ</a>
-      <a href="index.html">Sobre nós</a>
+      <a href="index.html"><span data-lang="pt">Sobre nós</span><span data-lang="en">About us</span></a>
     </nav>
     <div class="header-actions">
-      <button class="btn btn-ghost-light">Entrar</button>
-      <a class="btn btn-primary" href="Conta PJ.html#contapj-cta">Criar conta</a>
+      <div class="lang-switch" id="langSwitch">
+        <button class="lang-switch__toggle" type="button" aria-haspopup="listbox" aria-expanded="false">
+          <svg class="lang-switch__globe" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+          <span class="lang-switch__current" id="langCurrent">PT</span>
+          <span class="lang-switch__caret">▾</span>
+        </button>
+        <ul class="lang-switch__menu" role="listbox">
+          <li><button type="button" class="lang-switch__option" data-lang-set="pt" role="option">PT</button></li>
+          <li><button type="button" class="lang-switch__option" data-lang-set="en" role="option">EN</button></li>
+        </ul>
+      </div>
+      <button class="btn btn-ghost-light"><span data-lang="pt">Entrar</span><span data-lang="en">Log in</span></button>
+      <a class="btn btn-primary" href="Conta PJ.html#contapj-cta"><span data-lang="pt">Criar conta</span><span data-lang="en">Create account</span></a>
     </div>
   </header>
 
@@ -317,5 +328,6 @@
   })();
 </script>
 
+<script src="lang-switch.js" defer></script>
 </body>
 </html>
